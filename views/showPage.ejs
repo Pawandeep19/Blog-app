@@ -1,0 +1,9 @@
+<<div>
+    <h1><%= foundblog.title %></h1>
+    <img src="<%=foundblog.image %>" >
+    <p><%= foundblog.description %></p> 
+    <a href="/blog/<%=foundblog._id %>/edit">EDIT BLOG</a>
+    <form action="/blog/<%=foundblog._id%>?_method=DELETE" method="post">
+        <button>Delete</button>
+    </form>
+</div>

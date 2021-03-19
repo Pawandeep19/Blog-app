@@ -1,0 +1,6 @@
+<form action="/blog/<%=blog._id %>?_method=PUT" method="POST">
+    <input type="text" value="<%=blog.title %>" name="title">
+    <input type="text" value="<%=blog.image %>" name="image">
+    <input type="text" value="<%=blog.description %>" name="description">
+    <button>Submit</button>
+</form>

@@ -1,0 +1,10 @@
+<h1>BLog app</h1>
+<a href="/blog/new">ADD NEW BLOG</a>
+<% for(var i=0;i<blogs.length;i++) { %>
+     <div>
+         <h1><%= blogs[i].title %></h1>
+         <img src="<%=blogs[i].image %>" height=400 width=400>
+         <p><%= blogs[i].description.substring(0,100) %></p> 
+         <a href="/blog/<%=blogs[i]._id %>">Read More</a>
+     </div>
+<% } %>    
